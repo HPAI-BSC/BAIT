@@ -1,0 +1,37 @@
+defaults:
+  - default
+  - _self_
+
+overwrite_images: true
+
+dataset_name: Source
+output_name: Output
+
+classification_prefix: "a "  # ... this is an image showing ${class_prefix}$class_name. ...
+detection_prefix: "the "           # Which of the following bounding boxes contains ${box_prefix}$class_name?
+image_type: Photographic                        # ${image_type} image showing ...
+
+classif_classes:
+  - Class_0
+  - Class_1
+  - Class_2
+
+detect_classes:
+  - Class_0
+  - Class_1
+  - Class_2
+
+to_create:
+  - baseline_classification   # Classification only
+  - baseline_detection        # Detection only
+  - sycophancy                # Classification + Detection
+  - captions                  # Classification + Detection
+  - captions_text             # Classification + Detection
+  - legends                   # Detection only
+
+fake_bbox_arguments:
+  size_variation: 0.1
+  mean_diff_threshold: 0.3
+  std_diff_threshold: 0.5
+  exclude_black: 0.05
+  max_attempts: 10000

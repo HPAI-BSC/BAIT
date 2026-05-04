@@ -1,0 +1,6 @@
+output_name: Merged_Output
+output_dir: output
+seed: 42
+
+batch_configs:
+  - example_dataset

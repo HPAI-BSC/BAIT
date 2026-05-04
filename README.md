@@ -1,4 +1,4 @@
-# Adversarial Datasets
+# BAIT (Blind-trust Adversarial Injection Toolkit)
 
 Generate adversarial multimodal benchmark datasets from image classification and detection annotations.
 

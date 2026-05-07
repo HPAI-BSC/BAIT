@@ -116,3 +116,15 @@ src/      Generator and approach implementations
 The main orchestration lives in `src/generator.py`. Approach-specific behavior is implemented in `src/approaches/`, and reusable image / annotation helpers live in `src/core/`.
 
 Random seeds can be fixed to make generation reproducible across runs.
+
+# Citation
+
+```
+@inproceedings{suarezfernandez2026heart,
+  author = {Mart{\'\i}n Su{\'a}rez-Fern{\'a}ndez and Enrique Lopez-Cuena and Jaume Guasch-Mart{\'\i} and Dario Garcia-Gasulla and Anna Arias-Duart},
+  title = {HEART Attacks: Healthcare Evaluation of Adversarial RobusTness},
+  booktitle = {Proceedings of the ACM Conference on Fairness, Accountability, and Transparency (FAccT '2026)},
+  year = {2026},
+  publisher = {ACM},
+}
+```
